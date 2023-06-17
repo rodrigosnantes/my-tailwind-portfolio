@@ -1,8 +1,6 @@
-import { ReactNode } from 'react';
+import { TratingItem } from '../../../../app/data/t-rating-item';
 
-export default function RatingItem(props: InputProps) {
-  const { title, value, icon } = props;
-
+export default function RatingItem({ title, value, icon }: TratingItem) {
   return (
     <div
       className="flex items-center content-center"
@@ -30,9 +28,3 @@ export default function RatingItem(props: InputProps) {
     </div>
   );
 }
-
-type InputProps = {
-  title: String;
-  value: number;
-  icon?: ReactNode;
-};

@@ -1,8 +1,6 @@
-import { ReactNode } from 'react';
+import { TnavItem } from '../../../../app/data/t-nav-item';
 
-export default function NavIcon(props: InputPropTypes) {
-  const { reference, children, callback } = props;
-
+export default function NavIcon({ reference, children, callback }: TnavItem) {
   return (
     <a
       className="rounded-full p-1 md:p-2 border border-gray-600 dark:border-gray-200 hover:border-blue-500 duration-200 hover:dark:border-blue-500"
@@ -15,9 +13,3 @@ export default function NavIcon(props: InputPropTypes) {
     </a>
   );
 }
-
-type InputPropTypes = {
-  reference: string;
-  children: ReactNode;
-  callback?: any;
-};

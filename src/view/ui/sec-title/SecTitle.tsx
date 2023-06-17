@@ -1,6 +1,4 @@
-export default function SecTitle(props: InputPropType) {
-  const { title } = props;
-
+export default function SecTitle({ title }: { title: string }) {
   return (
     <div
       className="text-center max-w-lg mx-auto"
@@ -13,7 +11,3 @@ export default function SecTitle(props: InputPropType) {
     </div>
   );
 }
-
-type InputPropType = {
-  title: String;
-};

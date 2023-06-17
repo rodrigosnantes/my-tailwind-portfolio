@@ -1,8 +1,6 @@
 import { cloneElement } from 'react';
 
-export default function SocialIcon(props: InputProps) {
-  const { children } = props;
-
+export default function SocialIcon({ children }: { children: any }) {
   return (
     <div
       className="w-12 h-12 flex items-center justify-center rounded-xl text-gray-600 border-black border hover:border-blue-500"
@@ -15,7 +13,3 @@ export default function SocialIcon(props: InputProps) {
     </div>
   );
 }
-
-type InputProps = {
-  children: any;
-};

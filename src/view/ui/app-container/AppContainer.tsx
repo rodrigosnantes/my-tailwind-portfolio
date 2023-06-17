@@ -1,10 +1,8 @@
-import { ReactNode, useContext } from 'react';
+import { useContext } from 'react';
 import { ThemeContext } from '../../../App';
+import { Tchildren } from '../../../app/data/t-children';
 
-export default function AppContainer(props: InputPropType) {
-  const { children } = props;
-
-  // @ts-ignore
+export default function AppContainer({ children }: Tchildren) {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -13,7 +11,3 @@ export default function AppContainer(props: InputPropType) {
     </div>
   );
 }
-
-type InputPropType = {
-  children: ReactNode;
-};

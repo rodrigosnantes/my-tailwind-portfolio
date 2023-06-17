@@ -22,9 +22,9 @@ export default function ProjectItemCard() {
       </div>
 
       <div className="px-6 pt-4 pb-2">
-        <HashtagItem />
-        <HashtagItem />
-        <HashtagItem />
+        <HashtagItem title="#react" />
+        <HashtagItem title="#ts" />
+        <HashtagItem title="#reactquery" />
       </div>
     </div>
   );

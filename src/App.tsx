@@ -4,6 +4,8 @@ import { createContext } from 'react';
 
 import AOS from 'aos';
 
+import { Tcontext } from './app/data/t-context';
+
 import AboutSec from './view/use-case/about-sec/AboutSec';
 import SkillSec from './view/use-case/skill-sec/SkillSec';
 import WorksSec from './view/use-case/works-sec/WorksSec';
@@ -16,13 +18,13 @@ import FloatingControl from './view/use-case/floating-control/FloatingControl';
 import 'aos/dist/aos.css';
 import './App.css';
 
-export const ThemeContext = createContext({});
+export const ThemeContext = createContext<Tcontext>({} as Tcontext);
 AOS.init();
 
 export default function App() {
   const [dark, setDark] = useState(false);
 
-  function handleTheme() {
+  function handleTheme(): void {
     setDark((prev) => !prev);
   }
 

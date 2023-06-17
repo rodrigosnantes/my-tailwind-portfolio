@@ -1,16 +1,13 @@
-import { ReactNode } from 'react';
+import { TsecContainer } from "../../../app/data/t-sec";
 
-export default function SecContainer(props: InputPropType) {
-  const { secId, children, className } = props;
+export default function SecContainer({
+  secId,
+  children,
+  className,
+}: TsecContainer) {
   return (
     <section id={secId} className={className}>
       {children}
     </section>
   );
 }
-
-type InputPropType = {
-  secId: string;
-  children: ReactNode;
-  className?: string;
-};

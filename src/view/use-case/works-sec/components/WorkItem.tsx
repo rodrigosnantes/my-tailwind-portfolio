@@ -1,8 +1,10 @@
+import { TworkItem } from '../../../../app/data/t-work-item';
 import Typography from '../../../ui/typography/Typography';
 
-export default function WorkItem(props: InputPropType) {
-  const { date = '10/02/2018 - ---', description } = props;
-
+export default function WorkItem({
+  date = '10/02/2018 - ---',
+  description,
+}: TworkItem) {
   return (
     <li data-aos="fade-down" data-aos-duration="1000">
       <div className="flex-start flex items-center pt-2 md:block md:pt-0">
@@ -20,8 +22,3 @@ export default function WorkItem(props: InputPropType) {
     </li>
   );
 }
-
-type InputPropType = {
-  date?: string;
-  description?: string;
-};
