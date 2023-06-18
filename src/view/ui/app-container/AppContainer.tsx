@@ -7,7 +7,7 @@ export default function AppContainer({ children }: Tchildren) {
 
   return (
     <div className={theme ? 'dark' : ''}>
-      <div className="px-10 dark:bg-gray-900 relative">{children}</div>
+      <div className="px-10 dark:bg-dark-background relative">{children}</div>
     </div>
   );
 }

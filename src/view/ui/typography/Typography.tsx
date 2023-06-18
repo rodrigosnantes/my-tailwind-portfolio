@@ -5,9 +5,5 @@ export default function Typography({
   text,
   children,
 }: ttypography) {
-  return (
-    <p className={`text-gray-600 dark:text-gray-400 ${CustomClass}`}>
-      {text || children}
-    </p>
-  );
+  return <p className={`${CustomClass}`}>{text || children}</p>;
 }
