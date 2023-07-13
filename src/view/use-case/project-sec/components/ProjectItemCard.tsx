@@ -2,6 +2,13 @@ import Typography from '../../../ui/typography/Typography';
 import HashtagItem from './HastagItem';
 
 export default function ProjectItemCard() {
+
+  const handleOpen = () => {
+      const link = document.createElement('a');
+      // link.setAttribute('target', '_blank');
+      // link.click();
+      alert('abre aqui')
+  }
   return (
     <div
       className="
@@ -13,11 +20,15 @@ export default function ProjectItemCard() {
       border
       border-dark-border
       hover:bg-dark-pink 
+      hover:border-white
+      hover:cursor-pointer
       dark:bg-dark-background-card
       dark:hover:bg-dark-pink
+      dark:hover:border-dark-pink
       "
       data-aos="fade-down"
       data-aos-duration="1000"
+      onClick={handleOpen}
     >
       <div className="p-4">
         <img
@@ -26,11 +37,11 @@ export default function ProjectItemCard() {
           alt="Sunset in the mountains"
         />
 
-        <div className="pt-4">
+        {/* <div className="pt-4">
           <HashtagItem title="#react" />
           <HashtagItem title="#ts" />
           <HashtagItem title="#reactquery" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

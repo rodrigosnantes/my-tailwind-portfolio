@@ -25,7 +25,7 @@ export default function SkillSec() {
     { title: 'Vue', value: 40, icon: <VueIcon />, class: STYLE },
     { title: 'MongoDB', value: 60, icon: <MongodbIcon />, class: STYLE },
     { title: 'MaterialUi', value: 75, icon: <MongodbIcon />, class: STYLE },
-    { title: 'git', value: 80, icon: <MongodbIcon />, class: STYLE },
+    { title: 'Git', value: 80, icon: <MongodbIcon />, class: STYLE },
   ];
 
   return (

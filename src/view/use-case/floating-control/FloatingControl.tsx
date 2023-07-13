@@ -6,6 +6,7 @@ import {
   HammerIcon,
   Info,
   Factory,
+  FlaskConical
 } from 'lucide-react';
 import { cloneElement, useContext } from 'react';
 import { ThemeContext } from '../../../App';
@@ -17,9 +18,9 @@ export default function FloatingControl() {
   const navList = [
     { ref: '#start', title: 'Home', icon: <Home />, callback: null },
     { ref: '#about', title: '', icon: <Info />, callback: null },
-    { ref: '#services', title: '', icon: <Info />, callback: null },
-    { ref: '#skills', title: '', icon: <HammerIcon />, callback: null },
-    { ref: '#works', title: '', icon: <BrainCog />, callback: null },
+    { ref: '#services', title: '', icon: <HammerIcon />, callback: null },
+    { ref: '#skills', title: '', icon: <BrainCog />, callback: null },
+    { ref: '#works', title: '', icon: <FlaskConical />, callback: null },
     { ref: '#projects', title: '', icon: <Factory />, callback: null },
     { ref: '#contact', title: 'Contact', icon: <Contact2 />, callback: null },
     { ref: '#', title: '', icon: <Moon />, callback: handleTheme },

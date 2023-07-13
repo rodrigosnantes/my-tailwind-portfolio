@@ -3,7 +3,7 @@ import { TnavItem } from '../../../../app/data/t-nav-item';
 export default function NavIcon({ reference, children, callback }: TnavItem) {
   return (
     <a
-      className="rounded-full p-1 md:p-2 border border-dark-font-light dark:border-gray-200 hover:border-dark-pink duration-200 hover:dark:border-dark-pink"
+      className="rounded-xl p-1 md:p-2 border border-dark-font-light dark:border-gray-200 hover:border-dark-pink duration-200 hover:dark:border-dark-pink"
       href={reference}
       onClick={callback}
     >

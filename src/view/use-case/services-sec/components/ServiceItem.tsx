@@ -17,11 +17,12 @@ export default function ServiceItem({
       shadow-md
       border
       border-dark-border
-      dark:bg-dark-background-card 
       hover:bg-dark-pink 
-      hover:text-white 
+      hover:text-white
+      hover:border-dark-pink 
       dark:hover:bg-dark-pink 
       dark:text-dark-font-light 
+      dark:bg-dark-background-card 
       dark:hover:text-white"
       data-aos="fade-down"
       data-aos-duration="1000"
