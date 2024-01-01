@@ -1,21 +1,24 @@
-import Typography from '../../../ui/typography/Typography';
-import HashtagItem from './HastagItem';
-
-export default function ProjectItemCard() {
+export default function ProjectItemCard({ image, redirectUrl }) {
 
   const handleOpen = () => {
-      const link = document.createElement('a');
-      // link.setAttribute('target', '_blank');
-      // link.click();
-      alert('abre aqui')
+    if (!redirectUrl) {
+      alert('Náo disponivel')
+      return
+    }
+
+    const link = document.createElement('a');
+    link.setAttribute('href', redirectUrl);
+    link.setAttribute('target', '_blank'); // Abre o link em uma nova aba
+    link.click();
   }
+
+
   return (
     <div
       className="
-      w-52
-      grow
+      w-60
+      h-60
       rounded
-      overflow-hidden 
       shadow-md
       border
       border-dark-border
@@ -30,19 +33,7 @@ export default function ProjectItemCard() {
       data-aos-duration="1000"
       onClick={handleOpen}
     >
-      <div className="p-4">
-        <img
-          className="w-full rounded"
-          src="https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="Sunset in the mountains"
-        />
-
-        {/* <div className="pt-4">
-          <HashtagItem title="#react" />
-          <HashtagItem title="#ts" />
-          <HashtagItem title="#reactquery" />
-        </div> */}
-      </div>
+        {image}
     </div>
   );
 }

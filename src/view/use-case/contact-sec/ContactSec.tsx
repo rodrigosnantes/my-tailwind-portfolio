@@ -1,4 +1,4 @@
-import { Linkedin, Github, Mail, WheatIcon } from 'lucide-react';
+import { Linkedin, Github, Mail, Codepen } from 'lucide-react';
 
 import SecContainer from '../../ui/sec-container/SecContainer';
 import SecContent from '../../ui/sec-content/SecContent';
@@ -18,14 +18,14 @@ export default function ContactSec() {
       alt: 'github',
     },
     {
-      hrefLink: 'https://api.whatsapp.com/send?phone=5548999720646',
-      icon: <WheatIcon />,
-      alt: 'whatsApp',
-    },
-    {
       hrefLink: 'mailto:rodrigosnantes01@gmail.com?Subject=Hello%20again',
       icon: <Mail />,
       alt: 'gmail',
+    },
+    {
+      hrefLink: 'https://codepen.io/your-work/',
+      icon: <Codepen />,
+      alt: 'codepnen',
     },
   ];
 
@@ -44,7 +44,7 @@ export default function ContactSec() {
       </SecContent>
 
       <SecContent customClass="pb-40 max-w-2xl mx-auto text-center text-gray-600 dark:text-dark-font-light">
-        <span className="font-light text-sm">© 2023 RNantes</span>
+        <span className="font-light text-sm">© 2024 RNantes</span>
       </SecContent>
     </SecContainer>
   );
