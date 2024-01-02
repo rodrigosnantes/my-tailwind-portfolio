@@ -1,4 +1,4 @@
-export default function ReactIcon(props) {
+export default function ReactIcon(props: any) {
   return (
     <svg
       {...props}

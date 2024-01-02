@@ -1,4 +1,4 @@
-export default function TailwindIcon(props) {
+export default function TailwindIcon(props: any) {
   return (
     <svg
       viewBox="0 0 256 154"

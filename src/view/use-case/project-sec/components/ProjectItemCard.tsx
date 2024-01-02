@@ -1,4 +1,4 @@
-export default function ProjectItemCard({ image, redirectUrl }) {
+export default function ProjectItemCard({ image, redirectUrl } : { image: any, redirectUrl: string }) {
 
   const handleOpen = () => {
     if (!redirectUrl) {

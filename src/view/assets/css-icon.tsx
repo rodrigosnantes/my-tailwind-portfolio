@@ -1,4 +1,4 @@
-export default function CssIcon(props) {
+export default function CssIcon(props: any) {
   return (
     <svg
       viewBox="0 0 256 361"

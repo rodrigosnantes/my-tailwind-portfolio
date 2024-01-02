@@ -1,4 +1,4 @@
-export default function MongodbIcon(props) {
+export default function MongodbIcon(props: any) {
   return (
     <svg
       version="1.1"
