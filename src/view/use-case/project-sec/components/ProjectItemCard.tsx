@@ -16,7 +16,7 @@ export default function ProjectItemCard({ image, redirectUrl } : { image: any, r
   return (
     <div
       className="
-      w-60
+      w-80
       h-60
       rounded
       shadow-md

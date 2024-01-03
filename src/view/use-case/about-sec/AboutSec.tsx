@@ -11,11 +11,10 @@ export default function AboutSec() {
       <SecContent>
         <Typography CustomClass="md:text-xl text-center text-dark-font-night font-light">
           <p>Olá, eu sou Rodrigo! Eu sou densenvolvedor Web.</p>
-          Sou um desenvolvedor web apaixonado e experiente, especializado em
+          Sou apaixonado e experiente, especializado em
           criar soluções bonitas e inovadoras. Tenho habilidades sólidas em
           programação, design e resolução de problemas, entrego projetos de alta
-          qualidade. Estou sempre motivado a oferecer resultados excepcionais
-          aos clientes.
+          qualidade. Estou sempre motivado a oferecer resultados excepcionais.
         </Typography>
       </SecContent>
     </SecContainer>
