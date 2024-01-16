@@ -1,3 +1,4 @@
+import { GitBranch, Github, FormInput } from 'lucide-react';
 import HtmlIcon from '../../assets/html-icon';
 import SecContainer from '../../ui/sec-container/SecContainer';
 import SecTitle from '../../ui/sec-title/SecTitle';
@@ -10,7 +11,6 @@ import NodeIcon from '../../assets/node-icon';
 import TailwindIcon from '../../assets/tailwind-icon';
 import MongodbIcon from '../../assets/mongodb-icon';
 import SecContent from '../../ui/sec-content/SecContent';
-import { GitBranch, Github } from 'lucide-react';
 import MaterialUi from '../../assets/MaterialUi';
 
 const STYLE = 'hover:text-teal-500 dark:text-cyan-500 w-5 h-5 dark:bg-blue-600 rounded-full dark:px-1';
@@ -26,6 +26,8 @@ const skillList = [
   { title: 'Git', value: 80, icon: <GitBranch />, class: STYLE },
   { title: 'GitHub', value: 80, icon: <Github />, class: STYLE },
   { title: 'Tailwind', value: 60, icon: <TailwindIcon />, class: STYLE },
+  { title: 'React-hook-form', value: 60, icon: <FormInput />, class: STYLE },
+  { title: 'Single-SPA', value: 60, icon: <JavascriptIcon />, class: STYLE },
 ];
 
 export default function SkillSec() {
